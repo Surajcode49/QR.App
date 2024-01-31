@@ -2475,12 +2475,37 @@ h6 {
 
 .text {
   margin-top: 20px;
-  margin-left: 45%;
+  margin-left: 40%;
+  font-size: 2rem;
 }
 
 .text h4 {
-  margin-left: 4rem;
+  margin-left: 6rem;
 }
+.buutt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  margin-top:2rem;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b44840;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #2980b9;
+}
+
+
 
 /* Responsive design for tablets */
 @media screen and (max-width: 768px) {
@@ -3073,8 +3098,9 @@ a s:nth-child(4) {
 
 .wrap {
   position: absolute;
+  font-size:large;
   top: 50%;
-  left: 50%;
+  left: 47%;
   margin-top: -86px;
   margin-left: -89px;
   text-align: center;
@@ -3131,8 +3157,8 @@ a.button2:hover {
 /* Responsive Styles for Mobile */
 @media (max-width: 480px) {
   .wrap {
-    margin-top: 150px; /* Adjust margin for mobile screens */
-    margin-left: -200px;
+    margin-top: 260px; /* Adjust margin for mobile screens */
+    margin-left: -192px;
   }
 
   a {
@@ -3155,12 +3181,14 @@ a.button2:hover {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  font-size: 2rem;
 }
 
 .te p {
 
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -3168,6 +3196,7 @@ a.button2:hover {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -3197,18 +3226,19 @@ a.button2:hover {
 
 /* 5 */
 .btn-5 {
-  position: absolute;
-  right: 50%;
-  left: 50%;
   margin-top: 2rem;
   width: 130px;
   height: 40px;
-
   line-height: 42px;
   padding: 0;
   border: none;
-  background: rgb(255, 27, 0);
+  background: rgb(92, 12, 3);
   background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+
+  /* Center the button horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .btn-5:hover {
@@ -3245,29 +3275,6 @@ a.button2:hover {
   width: 100%;
   transition: 800ms ease all;
 }
-.new {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  height: auto;
-  width: 100vw;
-}
-
-
-/* Responsive Styles for Tablet */
-@media (max-width: 768px) {
-  .new {
-    flex-direction: column; /* Adjust the layout for smaller screens */
-  }
-}
-
-/* Responsive Styles for Mobile */
-@media (max-width: 480px) {
-  .new {
-    margin-top: 5rem; /* Adjust margin for smaller screens */
-  }
-}
 
 
 
@@ -3285,8 +3292,80 @@ a.button2:hover {
 @media (max-width: 480px) {
   .btn-5 {
     width: 60%; /* Adjust the width for mobile screens */
-    left: 50%; /* Center the button on smaller screens */
+    left: 30%; /* Center the button on smaller screens */
     transform: translateX(-50%);
     margin-top: 1rem; /* Adjust margin for smaller screens */
+  }
+}
+
+.nn img{
+  margin-top: 30px;
+    height: 15rem;
+    width: 100vw;
+}
+.wrap2{
+   font-size: x-large;
+}
+
+.wrap2 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+}
+
+.jai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.endtext h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+
+@media (max-width: 768px) {
+  .nn img {
+    height: 10rem; /* Adjust the height for tablet view */
+    width: 100%;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  .nn img {
+    height: 8rem; /* Adjust the height for mobile view */
+  }
+}
+
+
+/* Responsive styles for tablet */
+@media (max-width: 768px) {
+  .wrap2 {
+    font-size: large; /* Adjust the font size for tablet view */
+  }
+
+  .wrap2 h2,
+  .jai,
+  .endtext h2 {
+    font-size: large; /* Adjust the font size for tablet view */
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  .wrap2 {
+    font-size: medium; /* Adjust the font size for mobile view */
+  }
+
+  .wrap2 h2,
+  .jai,
+  .endtext h2 {
+    font-size: medium; /* Adjust the font size for mobile view */
   }
 }
