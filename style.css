@@ -3115,7 +3115,31 @@ a.button2:hover {
   box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
 }
 
+/*  responsive code for button */
 
+@media (max-width: 768px) {
+  .wrap {
+    margin-top: -50px; /* Adjust margin for tablet screens */
+    margin-left: -50px;
+  }
+
+  a {
+    max-width: 80%; /* Adjust max-width for tablet screens */
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 480px) {
+  .wrap {
+    margin-top: 150px; /* Adjust margin for mobile screens */
+    margin-left: -200px;
+  }
+
+  a {
+    max-width: 90%; /* Adjust max-width for mobile screens */
+    padding: 15px 20px; /* Adjust padding for mobile screens */
+  }
+}
 .next {
   margin-top: 30rem;
 }
@@ -3221,12 +3245,48 @@ a.button2:hover {
   width: 100%;
   transition: 800ms ease all;
 }
-
 .new {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  margin-top: 5rem;
   height: auto;
   width: 100vw;
+}
+
+
+/* Responsive Styles for Tablet */
+@media (max-width: 768px) {
+  .new {
+    flex-direction: column; /* Adjust the layout for smaller screens */
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 480px) {
+  .new {
+    margin-top: 5rem; /* Adjust margin for smaller screens */
+  }
+}
+
+
+
+
+/* Responsive Styles for Tablet */
+@media (max-width: 768px) {
+  .btn-5 {
+    width: 40%; /* Adjust the width for tablet screens */
+    left: 50%; /* Center the button on smaller screens */
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 480px) {
+  .btn-5 {
+    width: 60%; /* Adjust the width for mobile screens */
+    left: 50%; /* Center the button on smaller screens */
+    transform: translateX(-50%);
+    margin-top: 1rem; /* Adjust margin for smaller screens */
+  }
 }
