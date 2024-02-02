@@ -83,10 +83,10 @@ hr {
   border-top-width: 1px;
 }
 
-abbr:where([title]) {
+/* abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-}
+} */
 
 h1,
 h2,
@@ -1002,7 +1002,7 @@ video {
   border-style: solid;
 }
 
-.border-black {
+/* .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
@@ -1206,9 +1206,9 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
+} */
 
-.from-\[\#ff8a05\] {
+/* .from-\[\#ff8a05\] {
   --tw-gradient-from: #ff8a05 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 138 5 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -1334,11 +1334,11 @@ video {
 
 .to-purple-600 {
   --tw-gradient-to: #9333ea var(--tw-gradient-to-position);
-}
+} */
 
-.to-transparent {
+/* .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
+} */
 
 .bg-clip-text {
   -webkit-background-clip: text;
@@ -2442,18 +2442,55 @@ h6 {
   }
 }
 
+
+.imgs{
+  width: 100vw;
+  height: 50vh;
+}
 /*# sourceMappingURL=style.min.css.map */
 .img1 {
-  height: 40vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  margin-top: 2rem;
+}
+
+.upper-img{
+  /* margin-bottom: 2rem; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
+  /* width: 100vw; */
+  padding-left: 16rem;
+  padding-bottom: 12rem;
+  height: 45vh;
+  /* z-index: 10; */
+}
+.img-1-1{
+  width: fit-content;
+  height: 550%;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-right: 00px;
+}
+.img2{
+  margin-top: 6rem;
 }
 
 .imgs1 {
 
-  margin-left: 40%;
+  /* margin-left: 40%; */
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
 
-  height: 10rem;
-  width: 20rem;
+  /* height: 10rem;
+  width: 20rem; */
 }
 
 @media screen and (max-width: 768px) {
@@ -2474,14 +2511,18 @@ h6 {
 
 
 .text {
-  margin-top: 20px;
-  margin-left: 40%;
   font-size: 2rem;
+  background-color: red;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.text h4 {
+/* .text h4 {
   margin-left: 6rem;
-}
+} */
 .buutt{
   display: flex;
   align-items: center;
@@ -3299,9 +3340,10 @@ a.button2:hover {
 }
 
 .nn img{
-  margin-top: 30px;
-    height: 15rem;
+    /* margin-top: 30px; */
+    height: 20rem;
     width: 100vw;
+    z-index: 0;
 }
 .wrap2{
    font-size: x-large;
@@ -3368,4 +3410,11 @@ a.button2:hover {
   .endtext h2 {
     font-size: medium; /* Adjust the font size for mobile view */
   }
+}
+
+.background-img-bottom{
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('../QR.App//src//background.webp'); */
+  background-size: cover;
 }
