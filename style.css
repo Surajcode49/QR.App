@@ -3425,7 +3425,7 @@ a.button2:hover {
 
 .background-img-bottom{
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   /* background-image: url('../QR.App//src//background.webp'); */
   background-size: cover;
 }
