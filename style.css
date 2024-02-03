@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=REM:wght@100;200;400;500;600;700;800&display=swap);
 
+*{
+  max-width: 100vw;
+}
 *,
 ::after,
 ::before {
@@ -2461,7 +2464,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
   /* width: 100vw; */
   padding-left: 16rem;
   padding-bottom: 12rem;
@@ -2483,7 +2486,7 @@ h6 {
 
   /* margin-left: 40%; */
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2512,7 +2515,7 @@ h6 {
 
 .text {
   font-size: 2rem;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   width: 100vw;
   flex-direction: column;
@@ -2551,22 +2554,22 @@ h6 {
 /* Responsive design for tablets */
 @media screen and (max-width: 768px) {
   .text {
-    margin-left: 30%;
+    /* margin-left: 30%; */
   }
 
   .text h4 {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 }
 
 /* Responsive design for mobile devices */
 @media screen and (max-width: 480px) {
   .text {
-    margin-left: 25%;
+    /* margin-left: 25%; */
   }
 
   .text h4 {
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
   }
 }
 
@@ -3165,6 +3168,9 @@ a.button {
   color: rgba(0, 0, 0, 0.6);
   box-shadow: rgba(0, 0, 0, 0.4) 0 0px 0px 2px inset;
   text-decoration: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a.button:hover {
@@ -3215,6 +3221,11 @@ a.button2:hover {
   margin-top: -20rem;
   height: 30rem;
   width: 100vw;
+}
+@media (max-width: 480px){
+  .skk{
+    height: 15rem;
+  }
 }
 
 .te h1 {
@@ -3389,26 +3400,26 @@ a.button2:hover {
 /* Responsive styles for tablet */
 @media (max-width: 768px) {
   .wrap2 {
-    font-size: large; /* Adjust the font size for tablet view */
+    font-size: medium; /* Adjust the font size for tablet view */
   }
 
   .wrap2 h2,
   .jai,
   .endtext h2 {
-    font-size: large; /* Adjust the font size for tablet view */
+    font-size: medium; /* Adjust the font size for tablet view */
   }
 }
 
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
   .wrap2 {
-    font-size: medium; /* Adjust the font size for mobile view */
+    font-size: 14px; /* Adjust the font size for mobile view */
   }
 
   .wrap2 h2,
   .jai,
   .endtext h2 {
-    font-size: medium; /* Adjust the font size for mobile view */
+    font-size: 14px; /* Adjust the font size for mobile view */
   }
 }
 
@@ -3417,4 +3428,12 @@ a.button2:hover {
   height: 100vh;
   /* background-image: url('../QR.App//src//background.webp'); */
   background-size: cover;
+}
+.img-banner{
+  max-width: 100%;
+}
+.banner-img-1{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
