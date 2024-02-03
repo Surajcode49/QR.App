@@ -3437,3 +3437,9 @@ a.button2:hover {
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 480px) {
+.imgs{
+  height: 10vh;
+}
+}
