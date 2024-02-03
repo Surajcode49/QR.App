@@ -3442,4 +3442,7 @@ a.button2:hover {
 .imgs{
   height: 10vh;
 }
+.upper-img{
+  display: none;
+}
 }
