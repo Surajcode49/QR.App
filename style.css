@@ -349,7 +349,7 @@ video {
   padding-left: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .container {
     max-width: 640px;
     padding-right: 1rem;
@@ -922,7 +922,7 @@ video {
 }
 
 .grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .items-center {
@@ -3446,3 +3446,4 @@ a.button2:hover {
   display: none;
 }
 }
+
