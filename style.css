@@ -1,8 +1,20 @@
 @import url(https://fonts.googleapis.com/css2?family=REM:wght@100;200;400;500;600;700;800&display=swap);
 
-*{
-  max-width: 100vw;
+@font-face {
+  font-family: "#";
+  src: url(./fonts/FokersDemoRegular-WyZRG.ttf)
 }
+
+
+
+
+
+
+* {
+  max-width: 100vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 *,
 ::after,
 ::before {
@@ -938,7 +950,7 @@ video {
 }
 
 .gap-6 {
-  gap: 1.5rem;
+  gap: 0rem;
 }
 
 .overflow-hidden {
@@ -970,7 +982,7 @@ video {
 }
 
 .border {
-  border-width: 1px;
+  border-width: 0px;
 }
 
 .border-0 {
@@ -1441,7 +1453,7 @@ video {
 }
 
 .pb-20 {
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 
 .pl-2 {
@@ -1469,7 +1481,7 @@ video {
 }
 
 .pt-28 {
-  padding-top: 7rem;
+  padding-top: 0rem;
 }
 
 .text-left {
@@ -2446,10 +2458,11 @@ h6 {
 }
 
 
-.imgs{
+.imgs {
   width: 100vw;
   height: 50vh;
 }
+
 /*# sourceMappingURL=style.min.css.map */
 .img1 {
   height: 100%;
@@ -2459,7 +2472,7 @@ h6 {
   margin-top: 2rem;
 }
 
-.upper-img{
+.upper-img {
   /* margin-bottom: 2rem; */
   display: flex;
   justify-content: flex-start;
@@ -2471,14 +2484,16 @@ h6 {
   height: 45vh;
   /* z-index: 10; */
 }
-.img-1-1{
+
+.img-1-1 {
   width: fit-content;
   height: 550%;
   object-fit: contain;
   border-radius: 20px;
   margin-right: 00px;
 }
-.img2{
+
+.img2 {
   margin-top: 6rem;
 }
 
@@ -2490,6 +2505,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: contain;
   /* z-index: 1; */
 
   /* height: 10rem;
@@ -2500,6 +2516,7 @@ h6 {
   .imgs1 {
     width: 15rem;
     margin-left: 30%;
+    background-size: cover;
   }
 }
 
@@ -2509,6 +2526,8 @@ h6 {
     width: 12rem;
     margin-top: 20px;
     margin-left: 25%;
+    background-size: contain;
+
   }
 }
 
@@ -2521,27 +2540,31 @@ h6 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  letter-spacing: 5px;
 }
 
 /* .text h4 {
   margin-left: 6rem;
 } */
-.buutt{
+.buutt {
   display: flex;
   align-items: center;
   justify-content: center;
  
-  margin-top:2rem;
+
+  margin-top: 1rem;
 }
 
 .custom-button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #b44840;
+  background-color: #bf1e2d;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+ 
+  letter-spacing: 7px;
   transition: background-color 0.3s ease;
 }
 
@@ -2597,112 +2620,23 @@ a {
 
 }
 
-a:hover {
-  background: #03e9f4;
-  color: #050801;
-  box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 200px #03e9f4;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
 
-a:nth-child(1) {
-  filter: hue-rotate(270deg);
-}
 
-a:nth-child(2) {
-  filter: hue-rotate(110deg);
-}
+
+
 
 a s {
   position: absolute;
   display: block;
 }
 
-a s:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: animate1 1s linear infinite;
-}
-
-@keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-
-  50%,
-  100% {
-    left: 100%;
-  }
-}
-
-a s:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
-  0% {
-    top: -100%;
-  }
-
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-
-a s:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.50s;
-}
-
-@keyframes animate3 {
-  0% {
-    right: -100%;
-  }
-
-  50%,
-  100% {
-    right: 100%;
-  }
-}
 
 
-a s:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
 
-@keyframes animate4 {
-  0% {
-    bottom: -100%;
-  }
 
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
+
+
+
 
 
 
@@ -2712,55 +2646,7 @@ a s:nth-child(4) {
     margin-right: 10px;
   }
 
-  a s {
-    width: 50%;
-  }
-
-  a s:nth-child(1) {
-    animation-delay: 0.125s;
-  }
-
-  a s:nth-child(2) {
-    animation-delay: 0.25s;
-  }
-
-  a s:nth-child(3) {
-    animation-delay: 0.375s;
-  }
-
-  a s:nth-child(4) {
-    animation-delay: 0.5s;
-  }
 }
-
-@media screen and (max-width: 480px) {
-  a {
-    padding: 8px 12px;
-    margin-right: 5px;
-    letter-spacing: 1px;
-  }
-
-  a s {
-    width: 40%;
-  }
-
-  a s:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  a s:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  a s:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  a s:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-}
-
 
 /* HTML1 */
 
@@ -3142,10 +3028,10 @@ a s:nth-child(4) {
 
 .wrap {
   position: absolute;
-  font-size:large;
+  font-size: large;
   top: 50%;
   left: 47%;
-  margin-top: -86px;
+  margin-top: 120px;
   margin-left: -89px;
   text-align: center;
 }
@@ -3166,53 +3052,54 @@ a {
 
 a.button {
   color: rgba(0, 0, 0, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0px 0px 2px inset;
+  box-shadow: rgba(206, 27, 27, 0.4) 0 0px 0px 2px inset;
   text-decoration: solid;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-a.button:hover {
-  color: rgba(3, 3, 3, 0.85);
-  box-shadow: rgba(6, 6, 6, 0.7) 0 0px 0px 40px inset;
-}
+
 
 a.button2 {
   color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+  box-shadow: #bf1e2d 0 0px 0px 2px inset;
 }
 
-a.button2:hover {
-  color: rgba(255, 255, 255, 0.85);
-  box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
-}
+
+
 
 /*  responsive code for button */
 
 @media (max-width: 768px) {
   .wrap {
-    margin-top: -50px; /* Adjust margin for tablet screens */
+    margin-top: -50px;
+    /* Adjust margin for tablet screens */
     margin-left: -50px;
   }
 
   a {
-    max-width: 80%; /* Adjust max-width for tablet screens */
+    max-width: 80%;
+    /* Adjust max-width for tablet screens */
   }
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 480px) {
   .wrap {
-    margin-top: 260px; /* Adjust margin for mobile screens */
+    margin-top: 150px;
+    /* Adjust margin for mobile screens */
     margin-left: -192px;
   }
 
   a {
-    max-width: 90%; /* Adjust max-width for mobile screens */
-    padding: 15px 20px; /* Adjust padding for mobile screens */
+    max-width: 90%;
+    /* Adjust max-width for mobile screens */
+    padding: 15px 20px;
+    /* Adjust padding for mobile screens */
   }
 }
+
 .next {
   margin-top: 30rem;
 }
@@ -3222,8 +3109,9 @@ a.button2:hover {
   height: 30rem;
   width: 100vw;
 }
-@media (max-width: 480px){
-  .skk{
+
+@media (max-width: 480px) {
+  .skk {
     height: 15rem;
   }
 }
@@ -3232,7 +3120,7 @@ a.button2:hover {
 
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: -4rem;
   font-size: 2rem;
 }
 
@@ -3284,7 +3172,7 @@ a.button2:hover {
   line-height: 42px;
   padding: 0;
   border: none;
-  background: rgb(92, 12, 3);
+  background: #bf1e2d;
   background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
 
   /* Center the button horizontally */
@@ -3334,8 +3222,10 @@ a.button2:hover {
 /* Responsive Styles for Tablet */
 @media (max-width: 768px) {
   .btn-5 {
-    width: 40%; /* Adjust the width for tablet screens */
-    left: 50%; /* Center the button on smaller screens */
+    width: 40%;
+    /* Adjust the width for tablet screens */
+    left: 50%;
+    /* Center the button on smaller screens */
     transform: translateX(-50%);
   }
 }
@@ -3343,28 +3233,32 @@ a.button2:hover {
 /* Responsive Styles for Mobile */
 @media (max-width: 480px) {
   .btn-5 {
-    width: 60%; /* Adjust the width for mobile screens */
-    left: 30%; /* Center the button on smaller screens */
+    width: 60%;
+    /* Adjust the width for mobile screens */
+    left: 30%;
+    /* Center the button on smaller screens */
     transform: translateX(-50%);
-    margin-top: 1rem; /* Adjust margin for smaller screens */
+    margin-top: 1rem;
+    /* Adjust margin for smaller screens */
   }
 }
 
-.nn img{
-    /* margin-top: 30px; */
-    height: 20rem;
-    width: 100vw;
-    z-index: 0;
-}
-.wrap2{
-   font-size: x-large;
+.nn img {
+  /* margin-top: 30px; */
+  height: 20rem;
+  width: 100vw;
+  z-index: 0;
 }
 
-.wrap2 h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
+.wrap2 {
+  font-size: x-large;
+}
+
+.wrap2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
 
 }
 
@@ -3374,7 +3268,7 @@ a.button2:hover {
   align-items: center;
 }
 
-.endtext h2{
+.endtext h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3384,7 +3278,8 @@ a.button2:hover {
 
 @media (max-width: 768px) {
   .nn img {
-    height: 10rem; /* Adjust the height for tablet view */
+    height: 10rem;
+    /* Adjust the height for tablet view */
     width: 100%;
   }
 }
@@ -3392,7 +3287,8 @@ a.button2:hover {
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
   .nn img {
-    height: 8rem; /* Adjust the height for mobile view */
+    height: 8rem;
+    /* Adjust the height for mobile view */
   }
 }
 
@@ -3400,50 +3296,66 @@ a.button2:hover {
 /* Responsive styles for tablet */
 @media (max-width: 768px) {
   .wrap2 {
-    font-size: medium; /* Adjust the font size for tablet view */
+    font-size: medium;
+    /* Adjust the font size for tablet view */
   }
 
   .wrap2 h2,
   .jai,
   .endtext h2 {
-    font-size: medium; /* Adjust the font size for tablet view */
+    font-size: medium;
+    /* Adjust the font size for tablet view */
   }
 }
 
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
   .wrap2 {
-    font-size: 14px; /* Adjust the font size for mobile view */
+    font-size: 14px;
+    /* Adjust the font size for mobile view */
   }
 
   .wrap2 h2,
   .jai,
   .endtext h2 {
-    font-size: 14px; /* Adjust the font size for mobile view */
+    font-size: 14px;
+    /* Adjust the font size for mobile view */
   }
 }
 
-.background-img-bottom{
+.background-img-bottom {
   width: 100vw;
-  height: 70vh;
+  height: 37vh;
   /* background-image: url('../QR.App//src//background.webp'); */
   background-size: cover;
 }
-.img-banner{
+
+.img-banner {
   max-width: 100%;
 }
-.banner-img-1{
+
+.banner-img-1 {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 @media (max-width: 480px) {
-.imgs{
-  height: 10vh;
+  .imgs {
+    height: 10vh;
+  }
+
+  .upper-img {
+    display: none;
+  }
 }
-.upper-img{
-  display: none;
-}
+
+
+
+@media (max-width: 480px) {
+  .QR{
+    height: 10rem;
+    width:10rem;
+ }
 }
 
