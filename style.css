@@ -3115,6 +3115,16 @@ a.button2 {
 #t1{
   margin-left: 10px;
 }
+.te p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.te p1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
