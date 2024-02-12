@@ -2535,14 +2535,10 @@ h6 {
 
 
 .text {
-  font-size: 2rem;
-  /* background-color: red; */
   display: flex;
-  width: 100vw;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  letter-spacing: 2px;
+  align-items: center;
+  
 }
 
 /* .text h4 {
@@ -3370,4 +3366,18 @@ a.button2 {
 
 .ing span {
   margin-top: 10px; /* Adjust spacing between image and text */
+}
+
+
+.tm {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  /* Set the height of the container if needed */
+}
+
+.pm {
+     height:20rem;
+     width: 20rem;
+   
 }
