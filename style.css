@@ -77,6 +77,14 @@ sup {
   top: -0.5em;
 }
 
+.nm {
+  height: 8rem;
+  width: 8rem;
+
+
+
+}
+
 table {
   text-indent: 0;
   border-color: inherit;
@@ -866,6 +874,8 @@ video {
 }
 
 .text-center {
+  display: flex;
+  justify-content: center;
   text-align: center;
 
   height: 10rem;
@@ -882,7 +892,7 @@ video {
 @media screen and (max-width: 480px) {
   .text-center {
     width: 8rem;
-    margin-left: 45px;
+    margin: 0 auto;
   }
 }
 
@@ -1491,3 +1501,11 @@ a.button2 {
   width: 20rem;
 
 }
+
+
+
+
+/* code for html1 menu section*/
+
+
+

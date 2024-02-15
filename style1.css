@@ -1,0 +1,278 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: Georgia, Times, Times New Roman, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+
+}
+
+.panopto {
+    color: #30733f;
+    text-shadow: 1px 1px 2px #808080;
+}
+
+header h1 {
+    border-bottom: 4px solid #30733f;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 5px;
+        /* Adjust margin for smaller screens */
+    }
+
+    header {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin: 5px;
+        /* Adjust margin for even smaller screens */
+    }
+
+    header {
+        padding: 10px;
+        /* Adjust padding for even smaller screens */
+    }
+
+    header h1 {
+        font-size: 18px;
+        /* Further adjust font size for even smaller screens */
+    }
+}
+
+
+
+.welcome {
+    width: 100%;
+    height: auto;
+    background-color: #dedede;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        /* Stack items vertically for tablet screens */
+        align-items: center;
+        /* Center items horizontally */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        flex-direction: column;
+        
+        /* Add padding for better spacing on mobile screens */
+    }
+}
+
+.welcome h1 {
+    width: 20%;
+    color: #2e2e2e;
+    border-bottom: 4px solid #30733f;
+}
+
+.banner {
+    width: 85%;
+    height: auto;
+    display: flex;
+    padding-left: 70px;
+    padding-buttom: 70px;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+
+}
+
+.banner-back {
+    background-image: url("https://image.shutterstock.com/image-photo/pizza-tomatoes-mozzarella-cheese-arugula-260nw-1250809030.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+    border-bottom: 4px solid #2e2e2e;
+
+}
+@media (max-width: 768px) {
+    .banner-back {
+      height: 50vh; /* Adjusted height for tablet screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-back {
+      height: 17vh; /* Adjusted height for mobile screens */
+      padding-bottom: 40px; /* Adjusted padding for mobile screens */
+    }
+  }
+
+.banner p {
+    margin: 0;
+}
+
+.banner h1 {
+    text-shadow: 0 0 20px #2e2e2e;
+    margin: 0;
+}
+
+.contact {
+    width: 100%;
+    height: 100px;
+
+}
+
+.contact h1 {
+    width: 20%;
+    color: #2e2e2e;
+    border-bottom: 4px solid #30733f;
+}
+
+.contact a {
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .welcome h1,
+    .contact h1 {
+        width: 90%;
+        /* Adjusted width for tablet screens */
+    }
+
+    .banner {
+        font-size: 24px;
+        /* Adjusted font size for tablet screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .welcome h1,
+    .contact h1 {
+        width: 100%;
+        /* Adjusted width for mobile screens */
+        font-size: 18px;
+        /* Adjusted font size for mobile screens */
+    }
+
+    .banner {
+        font-size: 20px;
+        /* Adjusted font size for mobile screens */
+    }
+}
+
+
+.main {
+    display: column;
+    justify-content: center;
+
+
+}
+
+br {
+    margin: 10px;
+}
+
+
+
+
+.menu-card {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px;
+}
+
+.menu-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #30733f;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container h3 {
+    font-size: bold;
+    color: #2e2e2e;
+}
+
+.container h4 {
+    background-color: #A91b0d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.container p {
+    color: #2e2e2e;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+
+}
+
+@media (max-width: 400px) {
+    .menu-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-card {
+        width: 90%;
+        /* Adjusted width for mobile screens */
+    }
+}
