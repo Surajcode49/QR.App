@@ -1153,6 +1153,24 @@ a s {
   margin-bottom: 22rem;
 }
 
+.pbb {
+  height: 85px;
+  width: 230px;
+  color: #000;
+  border: 3px solid transparent;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 3px #bf1e2d, inset 0 0 0 3px #008e3c;
+}
+
+.nextt {
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 
 
 
